@@ -291,7 +291,7 @@ GROUP BY "CREDIT_PACKAGE".name;
 -- 6-4. 查詢：計算 11 月份總營收（使用 purchase_at 欄位統計）
 -- 顯示須包含以下欄位： 總營收
 
-SELECT SUM(price_paid) AS "總營收"
+SELECT SUM(price_paid) AS 總營收
 FROM "CREDIT_PURCHASE"
 WHERE purchase_at >= '2024-11-01' and purchase_at < '2024-12-01';
 
